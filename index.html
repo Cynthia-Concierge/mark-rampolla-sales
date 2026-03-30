@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From $200M exit to freedom. Get Mark Rampolla's proven framework for building businesses without burning out.">
+    <title>Mark Rampolla | Freedom First Coaching</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            color: #0a0a0a;
+        }
+
+        .hero .subtitle {
+            font-size: 24px;
+            color: #666;
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .hero .description {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 18px 40px;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #0052a3;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 102, 204, 0.3);
+        }
+
+        /* Story Section */
+        .story {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .story h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+
+        .story-content {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .story-content p {
+            margin-bottom: 24px;
+        }
+
+        .highlight {
+            background: linear-gradient(120deg, #fff9c4 0%, #fff9c4 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 85%;
+            padding: 2px 0;
+        }
+
+        /* Results Section */
+        .results {
+            padding: 100px 20px;
+            background: #f5f7fa;
+        }
+
+        .results h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .result-card {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        .result-card h3 {
+            font-size: 48px;
+            font-weight: 700;
+            color: #0066cc;
+            margin-bottom: 12px;
+        }
+
+        .result-card p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        /* Framework Section */
+        .framework {
+            padding: 100px 20px;
+            background: white;
+        }
+
+        .framework h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        .framework-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .framework-item {
+            margin-bottom: 40px;
+            padding: 30px;
+            background: #f9fafb;
+            border-radius: 12px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .framework-item h3 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #0a0a0a;
+        }
+
+        .framework-item p {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* CTA Section */
+        .final-cta {
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .final-cta h2 {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .final-cta p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.95;
+        }
+
+        .cta-button.white {
+            background: white;
+            color: #0066cc;
+        }
+
+        .cta-button.white:hover {
+            background: #f5f7fa;
+            color: #0052a3;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px 20px;
+            background: #0a0a0a;
+            color: white;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.7;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .hero .subtitle {
+                font-size: 18px;
+            }
+
+            .hero .description {
+                font-size: 16px;
+            }
+
+            .story h2, .results h2, .framework h2, .final-cta h2 {
+                font-size: 32px;
+            }
+
+            .story-content {
+                font-size: 16px;
+            }
+
+            .results-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .cta-button {
+                padding: 16px 32px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Build Freedom Before<br>You Build the Business</h1>
+            <p class="subtitle">The framework that took ZICO from startup to $200M exit — and back again</p>
+            <p class="description">Most entrepreneurs optimize their business while their internal operating system breaks down. Learn the system that made both successful.</p>
+            <a href="#apply" class="cta-button">Work With Mark</a>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story">
+        <div class="container">
+            <h2>The $200M Exit That Changed Everything</h2>
+            <div class="story-content">
+                <p>In 2013, I sold ZICO Coconut Water to Coca-Cola for $200 million. By every external measure, I'd made it.</p>
+
+                <p>Inside? I was completely empty.</p>
+
+                <p>The operating system I'd used to build ZICO — the constant hustle, the never-enough mentality, the optimization of every external metric — had worked for the business. But <span class="highlight">it had broken me</span>.</p>
+
+                <p>So I spent 7 years rebuilding from the inside out. I developed a framework for <span class="highlight">optimizing the internal operating system before optimizing the external business</span>.</p>
+
+                <p>Then I bought ZICO back from Coca-Cola. And scaled it beyond its previous peak — but this time, without losing myself in the process.</p>
+
+                <p>Now I run GroundForce Capital (managing $600M across brands like Liquid Death, Bobbie, and Righteous Felon) and coach founders on the same framework that saved me.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results">
+        <div class="container">
+            <h2>What's Possible When You Get This Right</h2>
+            <div class="results-grid">
+                <div class="result-card">
+                    <h3>$200M</h3>
+                    <p>ZICO exit to Coca-Cola</p>
+                </div>
+                <div class="result-card">
+                    <h3>$600M</h3>
+                    <p>Under management at GroundForce Capital</p>
+                </div>
+                <div class="result-card">
+                    <h3>2x</h3>
+                    <p>Scaled ZICO after buying it back — beyond previous peak</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework Section -->
+    <section class="framework">
+        <div class="container">
+            <h2>The Freedom First Framework</h2>
+            <div class="framework-list">
+                <div class="framework-item">
+                    <h3>Optimize Your Internal OS First</h3>
+                    <p>Most founders optimize revenue, team, operations — everything external. But if your internal operating system is running on burnout and scarcity, everything you build on top of it is unstable.</p>
+                </div>
+                <div class="framework-item">
+                    <h3>Nervous System Regulation</h3>
+                    <p>The most underrated competitive advantage in business. Learn to operate from a regulated nervous system instead of constant fight-or-flight. Better decisions, sustainable performance, actual presence.</p>
+                </div>
+                <div class="framework-item">
+                    <h3>Build From Abundance, Not Scarcity</h3>
+                    <p>The hustle-culture operating system is rooted in "not enough." The Freedom First framework teaches you to build from abundance — and counterintuitively, that's when the business accelerates.</p>
+                </div>
+                <div class="framework-item">
+                    <h3>Make the Internal and External Match</h3>
+                    <p>When your internal state matches your external goals, everything compounds. When they're misaligned, you're fighting yourself every step of the way. This framework aligns them.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta" id="apply">
+        <div class="container">
+            <h2>Ready to Build Different?</h2>
+            <p>Work directly with Mark to optimize your internal operating system and scale your business without burning out.</p>
+            <a href="mailto:hello@markrampolla.co?subject=Coaching Inquiry" class="cta-button white">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mark Rampolla. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
